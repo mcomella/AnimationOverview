@@ -1,4 +1,4 @@
-package xyz.mcomella.animationoverview.util
+package xyz.mcomella.animationoverview.view
 
 import android.view.animation.Animation
 

@@ -8,7 +8,6 @@ import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_view_animation_set.*
-import xyz.mcomella.animationoverview.util.AnimationAdapter
 import xyz.mcomella.animationoverview.R
 
 /** Percentage of the banner animation that will pass before the text should start. */
