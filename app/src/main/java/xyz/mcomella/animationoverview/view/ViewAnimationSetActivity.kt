@@ -1,4 +1,4 @@
-package xyz.mcomella.animationoverview
+package xyz.mcomella.animationoverview.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -7,16 +7,18 @@ import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.AnimationUtils
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_view_animation_set.*
+import xyz.mcomella.animationoverview.util.AnimationAdapter
+import xyz.mcomella.animationoverview.R
 
 /** Percentage of the banner animation that will pass before the text should start. */
 private const val TEXT_START_PERCENT = 0.70
 
-class MainActivity : AppCompatActivity() {
+class ViewAnimationSetActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_view_animation_set)
 
         /*
         - Sucks to coordinate animations from 3 files.
@@ -57,10 +59,4 @@ class MainActivity : AppCompatActivity() {
             })
         }
     }
-}
-
-private open class AnimationAdapter : Animation.AnimationListener {
-    override fun onAnimationRepeat(animation: Animation?) {}
-    override fun onAnimationEnd(animation: Animation?) {}
-    override fun onAnimationStart(animation: Animation?) {}
 }
