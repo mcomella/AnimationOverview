@@ -36,6 +36,14 @@ class AnimationSelectionActivity : AppCompatActivity() {
             addItemDecoration(DividerItemDecoration(this@AnimationSelectionActivity, orientation))
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        for (i in 0..animationList.childCount-1) {
+            val child = animationList.getChildAt(i)
+            child.isClickable = true // We disable click listeners after click to prevent double click: undo it.
+        }
+    }
 }
 
 private class AnimationListAdapter : RecyclerView.Adapter<AnimationViewHolder>() {
@@ -49,9 +57,10 @@ private class AnimationListAdapter : RecyclerView.Adapter<AnimationViewHolder>()
         val context = holder.itemView.context
         val (title, activityClass) = animationTitleToActivityClass[position]
         holder.animationTitle.text = title
-
-        // Double tapping will open two activities.
-        holder.itemView.setOnClickListener { context.startActivity(Intent(context, activityClass)) }
+        holder.itemView.setOnClickListener {
+            it.isClickable = false // Prevent double-tap.
+            context.startActivity(Intent(context, activityClass))
+        }
     }
 
     override fun getItemCount() = animationTitleToActivityClass.size
