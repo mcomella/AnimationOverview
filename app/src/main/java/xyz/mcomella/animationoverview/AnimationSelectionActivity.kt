@@ -18,6 +18,10 @@ private val animationTitleToActivityClass = listOf(
         "View animation with AnimationSet" to ViewAnimationSetActivity::class.java
 )
 
+/**
+ * Presents the user of a list of animations to try. We use this approach to make it easy
+ * to write multiple animations in the same application.
+ */
 class AnimationSelectionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +49,8 @@ private class AnimationListAdapter : RecyclerView.Adapter<AnimationViewHolder>()
         val context = holder.itemView.context
         val (title, activityClass) = animationTitleToActivityClass[position]
         holder.animationTitle.text = title
+
+        // Double tapping will open two activities.
         holder.itemView.setOnClickListener { context.startActivity(Intent(context, activityClass)) }
     }
 
