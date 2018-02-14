@@ -36,7 +36,7 @@ private const val TEXT_START_PERCENT = 0.70
  *   restricted.
  *   - You need to read multiple files in order to write one animation.
  *
- * Next: [ViewAnimationWithListenersActivity].
+ * Next: [ViewAnimationInCodeActivity].
  */
 class ViewAnimationSetActivity : AppCompatActivity() {
 
