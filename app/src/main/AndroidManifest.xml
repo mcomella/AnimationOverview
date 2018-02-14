@@ -19,7 +19,7 @@
 
         <!-- Exported necessary for run config to load Activity directly. -->
         <activity
-            android:name=".view.ViewAnimationSetActivity"
+            android:name=".view.ViewAnimationInXMLActivity"
             android:exported="true"
             />
 

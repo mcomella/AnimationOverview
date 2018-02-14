@@ -38,7 +38,7 @@ private const val TEXT_START_PERCENT = 0.70
  *
  * Next: [ViewAnimationInCodeActivity].
  */
-class ViewAnimationSetActivity : AppCompatActivity() {
+class ViewAnimationInXMLActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -19,7 +19,7 @@ private const val TEXT_START_PERCENT = 0.70
 
 /**
  * A "View Animation" defined in code, to try to improve upon using 5 files for one
- * animation from [ViewAnimationSetActivity].
+ * animation from [ViewAnimationInXMLActivity].
  *
  * Learnings:
  * - Allows you to naturally define duration, startOffset in relation to one another.

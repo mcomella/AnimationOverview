@@ -12,11 +12,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_animation_selection.*
 import xyz.mcomella.animationoverview.view.ViewAnimationInCodeActivity
-import xyz.mcomella.animationoverview.view.ViewAnimationSetActivity
+import xyz.mcomella.animationoverview.view.ViewAnimationInXMLActivity
 
 /** The list of the sample animation activities we support. */
 private val animationTitleToActivityClass = listOf(
-        "View animation with AnimationSet" to ViewAnimationSetActivity::class.java,
+        "View animation in XML" to ViewAnimationInXMLActivity::class.java,
         "View animation in code" to ViewAnimationInCodeActivity::class.java
 
 )
