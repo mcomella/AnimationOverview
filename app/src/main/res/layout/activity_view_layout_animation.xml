@@ -16,21 +16,46 @@
         tools:context="xyz.mcomella.animationoverview.view.ViewLayoutAnimationActivity"
         >
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/fadeContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Animation Overview"
-            android:textSize="32sp"
-            android:textColor="#000"
-            />
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Animation Overview"
+                android:textSize="32sp"
+                android:textColor="#000"
+                />
 
-        <TextView
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here is some body text to explain what the animation overview does. You can ignore it because the focal point of this demonstration is the animations, not the text that is written here. Lorem ipsum..."
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/translateContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Here is some body text to explain what the animation overview does. You can ignore it because the focal point of this demonstration is the animations, not the text that is written here. Lorem ipsum..."
-            android:textSize="18sp"
-            />
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text from the right"
+                android:textSize="18sp"
+                />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Row 2 sliding in on time"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
     </LinearLayout>
     
     <Button
