@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnimationOverview</string>
+    <string name="title_activity_view_layout_animation">ViewLayoutAnimation</string>
 </resources>

@@ -20,13 +20,13 @@
         <!-- Exported necessary for run config to load Activity directly. -->
         <activity
             android:name=".view.ViewAnimationInXMLActivity"
-            android:exported="true"
-            />
-
+            android:exported="true" />
         <activity
             android:name=".view.ViewAnimationInCodeActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
+        <activity
+            android:name=".view.ViewLayoutAnimationActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
