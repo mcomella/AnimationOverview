@@ -14,12 +14,14 @@ import kotlinx.android.synthetic.main.activity_animation_selection.*
 import xyz.mcomella.animationoverview.view.ViewAnimationInCodeActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInXMLActivity
 import xyz.mcomella.animationoverview.view.ViewLayoutAnimationActivity
+import xyz.mcomella.animationoverview.view.ViewLayoutAnimationDelayedActivity
 
 /** The list of the sample animation activities we support. */
 private val animationTitleToActivityClass = listOf(
         "View animation in XML" to ViewAnimationInXMLActivity::class.java,
         "View animation in code" to ViewAnimationInCodeActivity::class.java,
-        "View LayoutAnimation" to ViewLayoutAnimationActivity::class.java
+        "View LayoutAnimation" to ViewLayoutAnimationActivity::class.java,
+        "View LayoutAnimation delayed" to ViewLayoutAnimationDelayedActivity::class.java
 )
 
 /**

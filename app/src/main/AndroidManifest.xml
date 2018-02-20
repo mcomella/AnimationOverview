@@ -27,6 +27,9 @@
         <activity
             android:name=".view.ViewLayoutAnimationActivity"
             android:exported="true" />
+        <activity
+            android:name=".view.ViewLayoutAnimationDelayedActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
