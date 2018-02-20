@@ -21,7 +21,7 @@ class ViewLayoutAnimationDelayedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_layout_animation)
+        setContentView(R.layout.activity_view_layout_animation_delayed)
 
         startAnimButton.setOnClickListener {
             listOf(fadeContainer, translateContainer).forEach { container ->
@@ -39,12 +39,12 @@ class ViewLayoutAnimationDelayedActivity : AppCompatActivity() {
 
         // Delay layout to avoid animation lag.
         fadeContainer.postDelayed({
-            fadeContainer.layoutAnimation = LayoutAnimationController(AnimationUtils.loadAnimation(this, android.R.anim.fade_in))
-            translateContainer.layoutAnimation = LayoutAnimationController(AnimationUtils.loadAnimation(this, R.anim.translate_from_right))
-
             fadeContainer.visibility = View.VISIBLE
             translateContainer.visibility = View.VISIBLE
-        }, 250L)
+
+            fadeContainer.layoutAnimation = LayoutAnimationController(AnimationUtils.loadAnimation(this, android.R.anim.fade_in))
+            translateContainer.layoutAnimation = LayoutAnimationController(AnimationUtils.loadAnimation(this, R.anim.translate_from_right))
+        }, 500L)
     }
 
     private fun getChild() = TextView(this).apply {
