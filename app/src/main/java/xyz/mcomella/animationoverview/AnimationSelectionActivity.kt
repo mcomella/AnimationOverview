@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_animation_selection.*
+import xyz.mcomella.animationoverview.property.ViewPropertyAnimatorActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInCodeActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInXMLActivity
 import xyz.mcomella.animationoverview.view.ViewLayoutAnimationActivity
@@ -21,7 +22,9 @@ private val animationTitleToActivityClass = listOf(
         "View animation in XML" to ViewAnimationInXMLActivity::class.java,
         "View animation in code" to ViewAnimationInCodeActivity::class.java,
         "View LayoutAnimation" to ViewLayoutAnimationActivity::class.java,
-        "View LayoutAnimation delayed" to ViewLayoutAnimationDelayedActivity::class.java
+        "View LayoutAnimation delayed" to ViewLayoutAnimationDelayedActivity::class.java,
+        "(12+) ViewPropertyAnimator" to ViewPropertyAnimatorActivity::class.java
+
 )
 
 /**

@@ -30,6 +30,9 @@
         <activity
             android:name=".view.ViewLayoutAnimationDelayedActivity"
             android:exported="true" />
+        <activity
+            android:name=".property.ViewPropertyAnimatorActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
