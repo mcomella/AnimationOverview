@@ -33,6 +33,9 @@
         <activity
             android:name=".property.ViewPropertyAnimatorActivity"
             android:exported="true" />
+        <activity
+            android:name=".property.ObjectAnimatorInCodeActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
