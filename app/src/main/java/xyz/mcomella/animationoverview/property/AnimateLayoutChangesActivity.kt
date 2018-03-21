@@ -1,6 +1,5 @@
 package xyz.mcomella.animationoverview.property
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView

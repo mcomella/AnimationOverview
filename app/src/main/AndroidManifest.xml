@@ -39,6 +39,9 @@
         <activity
             android:name=".property.AnimateLayoutChangesActivity"
             android:exported="true" />
+        <activity
+            android:name=".property.StateListAnimatorActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

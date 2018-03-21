@@ -13,6 +13,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_animation_selection.*
 import xyz.mcomella.animationoverview.property.AnimateLayoutChangesActivity
 import xyz.mcomella.animationoverview.property.ObjectAnimatorInCodeActivity
+import xyz.mcomella.animationoverview.property.StateListAnimatorActivity
 import xyz.mcomella.animationoverview.property.ViewPropertyAnimatorActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInCodeActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInXMLActivity
@@ -27,7 +28,8 @@ private val animationTitleToActivityClass = listOf(
         "View LayoutAnimation delayed" to ViewLayoutAnimationDelayedActivity::class.java,
         "(11+) ObjectAnimator in code" to ObjectAnimatorInCodeActivity::class.java,
         "(12+) ViewPropertyAnimator" to ViewPropertyAnimatorActivity::class.java,
-        "(11+) animateLayoutChanges=true" to AnimateLayoutChangesActivity::class.java
+        "(11+) animateLayoutChanges=true" to AnimateLayoutChangesActivity::class.java,
+        "(21+) StateListAnimator" to StateListAnimatorActivity::class.java
 )
 
 /**
