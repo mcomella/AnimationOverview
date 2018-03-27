@@ -45,6 +45,9 @@
         <activity
             android:name=".transition.TransitionActivity"
             android:exported="true" />
+        <activity
+            android:name=".transition.TransitionWithSetActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
