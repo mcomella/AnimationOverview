@@ -42,6 +42,9 @@
         <activity
             android:name=".property.StateListAnimatorActivity"
             android:exported="true" />
+        <activity
+            android:name=".transition.TransitionActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

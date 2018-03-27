@@ -15,6 +15,7 @@ import xyz.mcomella.animationoverview.property.AnimateLayoutChangesActivity
 import xyz.mcomella.animationoverview.property.ObjectAnimatorInCodeActivity
 import xyz.mcomella.animationoverview.property.StateListAnimatorActivity
 import xyz.mcomella.animationoverview.property.ViewPropertyAnimatorActivity
+import xyz.mcomella.animationoverview.transition.TransitionActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInCodeActivity
 import xyz.mcomella.animationoverview.view.ViewAnimationInXMLActivity
 import xyz.mcomella.animationoverview.view.ViewLayoutAnimationActivity
@@ -29,7 +30,8 @@ private val animationTitleToActivityClass = listOf(
         "(11+) ObjectAnimator in code" to ObjectAnimatorInCodeActivity::class.java,
         "(12+) ViewPropertyAnimator" to ViewPropertyAnimatorActivity::class.java,
         "(11+) animateLayoutChanges=true" to AnimateLayoutChangesActivity::class.java,
-        "(21+) StateListAnimator" to StateListAnimatorActivity::class.java
+        "(21+) StateListAnimator" to StateListAnimatorActivity::class.java,
+        "(19+ or support) Transitions" to TransitionActivity::class.java
 )
 
 /**
